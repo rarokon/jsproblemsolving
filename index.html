@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./rsc/style.css" />
+    <script src="./rsc/script.js"></script>
+    <title>JavaScript Problem Solving Project</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="basicProblem">
+        <h2 style="text-align: center; padding-bottom: 10px">Basic Problem</h2>
+        <div class="article">
+          <div class="title">
+            <p>Print numbers from 1 to 10</p>
+          </div>
+          <div class="btn">
+            <button onclick="printNumbers()">Click to Print 1-10</button>
+          </div>
+          <div id="output"></div>
+        </div>
+
+        <div class="article">
+          <div class="title">
+            <p>sum of two numbers</p>
+          </div>
+          <label for="num1">First Number:</label>
+          <input type="number" id="num1" /><br /><br />
+
+          <label for="num2">Second Number:</label>
+          <input type="number" id="num2" /><br /><br />
+
+          <button onclick="addNumbers()">Add</button>
+
+          <h3>Result: <span id="result">0</span></h3>
+        </div>
+
+        <div class="article">
+          <div class="title">
+            <p>find the largest of three numbers</p>
+          </div>
+          <label for="large1">Enter first number:</label>
+          <input type="number" id="large1" /><br /><br />
+
+          <label for="large2">Enter second number:</label>
+          <input type="number" id="large2" /><br /><br />
+
+          <label for="large3">Enter third number:</label>
+          <input type="number" id="large3" /><br /><br />
+
+          <button onclick="findLargest()">Find Largest</button>
+
+          <h3>Largest Number: <span id="largestNumber">-</span></h3>
+        </div>
+
+        <div class="article">
+          <div class="title">
+            <p>Reverse a String</p>
+          </div>
+          <label for="inputString">Enter a string:</label>
+          <input type="text" id="inputString" /><br /><br />
+
+          <button onclick="reverseString()">Reverse</button>
+
+          <h3>Reversed String: <span id="resultStruingrReverse"></span></h3>
+        </div>
+
+        <div class="article">
+          <div class="title">
+            <p>Even and Odd Numbers from Array</p>
+          </div>
+          <label for="arrayInputOddEven"
+            >Enter numbers (comma-separated):</label
+          >
+          <input
+            type="text"
+            id="arrayInputOddEven"
+            placeholder="e.g. 2,5,8,11,14"
+          /><br /><br />
+
+          <button onclick="findEvenOdd()">Check Even and Odd</button>
+
+          <h3>Even Numbers: <span id="evenResult"></span></h3>
+          <h3>Odd Numbers: <span id="oddResult"></span></h3>
+        </div>
+
+        <div class="article">
+          <div class="title">
+            <p>Factorial Calculator</p>
+          </div>
+          <label for="factNumInput">Enter a number:</label>
+          <input type="number" id="factNumInput" min="0" /><br /><br />
+
+          <button onclick="calculateFactorial()">Calculate Factorial</button>
+
+          <h3>Result: <span id="resultFactorial"></span></h3>
+        </div>
+
+        <div class="article">
+          <div class="title">
+            <p>Multiplication Table Generator</p>
+          </div>
+          <label for="numInputMultipli">Enter a number:</label>
+          <input type="number" id="numInputMultipli" /><br /><br />
+
+          <button onclick="generateTable()">Generate Table</button>
+
+          <h3>Multiplication Table:</h3>
+          <pre id="resultMultipli"></pre>
+        </div>
+
+        <div class="article">
+          <div class="title">
+            <p>Palindrome Checker</p>
+          </div>
+
+          <label for="textInputPalindro">Enter a string:</label>
+          <input
+            type="text"
+            id="textInputPalindro"
+            placeholder="e.g. racecar"
+          /><br /><br />
+
+          <button onclick="checkPalindrome()">Check</button>
+
+          <h3>Result: <span id="resultPalindro"></span></h3>
+        </div>
+
+        <div class="article">
+          <div class="title">
+            <p>Count Vowels in a String</p>
+          </div>
+          <label for="textInputVowel">Enter a string:</label>
+          <input
+            type="text"
+            id="textInputVowel"
+            placeholder="e.g. Hello World"
+          /><br /><br />
+
+          <button onclick="countVowels()">Count Vowels</button>
+
+          <h3>Number of Vowels: <span id="resultVowel"></span></h3>
+        </div>
+
+        <div class="article">
+          <div class="title">
+            <p>Square Calculator</p>
+          </div>
+          <label for="numInputSquare">Enter a number:</label>
+        <input type="number" id="numInputSquare"><br><br>
+
+        <button onclick="findSquare()">Find Square</button>
+
+        <h3>Result: <span id="resultSquare"></span></h3>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>

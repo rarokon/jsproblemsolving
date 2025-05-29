@@ -1,0 +1,65 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: content-box;
+    color: darkslategrey;
+
+}
+
+#container {
+    width: 70%;
+    background-color: lightgray;
+    margin: 20px auto;
+    border: 1px;
+    padding: 20px 100px 20px 100px;
+}
+
+#basicProblem {
+
+    justify-content: center;
+    align-items: center;
+    background-color: gainsboro;
+    width: 80%;
+    padding: 20px;
+}
+
+.article {
+    background-color: ghostwhite;
+    padding: 20px;
+}
+
+.title {
+    font-size: 24px;
+    height: 30px;
+    background-color: gray;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.title>p {
+    text-align: center;
+    text-justify: auto;
+    color: #dfdfdf;
+    margin: 20px;
+}
+
+#output {
+    font-size: 24px;
+    /* height: 30px; */
+    background-color: #dfdfdf;
+    margin: auto;
+}
+
+button {
+    height: 30px;
+    width: 200px;
+    margin: 20px 0 20px 0;
+}
+
+.btn {
+    margin: auto;
+}
+
+span {
+    color: blueviolet;
+}
