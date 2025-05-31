@@ -10,7 +10,9 @@
   <body>
     <div id="container">
       <div id="basicProblem">
+        <hr />
         <h2 style="text-align: center; padding-bottom: 10px">Basic Problem</h2>
+        <hr />
         <div class="article">
           <div class="title">
             <p>Print numbers from 1 to 10</p>
@@ -119,7 +121,7 @@
           <input
             type="text"
             id="textInputPalindro"
-            placeholder="e.g. racecar"
+            placeholder="e.g. civic"
           /><br /><br />
 
           <button onclick="checkPalindrome()">Check</button>
@@ -148,13 +150,39 @@
             <p>Square Calculator</p>
           </div>
           <label for="numInputSquare">Enter a number:</label>
-        <input type="number" id="numInputSquare"><br><br>
+          <input type="number" id="numInputSquare" /><br /><br />
 
-        <button onclick="findSquare()">Find Square</button>
+          <button onclick="findSquare()">Find Square</button>
 
-        <h3>Result: <span id="resultSquare"></span></h3>
+          <h3>Result: <span id="resultSquare"></span></h3>
+        </div>
+      </div>
+
+      <div id="basicProblem">
+        <hr />
+        <h2 style="text-align: center; padding-bottom: 10px">
+          Intermediate Problem
+        </h2>
+        <hr />
+        <div class="article">
+          <div class="title">
+            <p>Second Largest Number Finder</p>
+          </div>
+          <label for="numInput1st">Enter 1st number:</label>
+          <input type="number" id="numInput1st" /><br /><br />
+          <label for="numInput2nd">Enter 2nd number:</label>
+          <input type="number" id="numInput2nd" /><br /><br />
+          <label for="numInput3rd">Enter 3rd number:</label>
+          <input type="number" id="numInput3rd" /><br /><br />
+          <label for="numInput4th">Enter 4th number:</label>
+          <input type="number" id="numInput4th" /><br /><br />
+
+          <button onclick="findLargest()">Find 2nd Largest</button>
+
+          <h3><span id="secondLargest"></span></h3>
         </div>
 
+        
       </div>
     </div>
   </body>

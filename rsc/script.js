@@ -136,3 +136,50 @@ function findSquare() {
     document.getElementById("resultSquare").textContent = `${num}² = ${square}`;
   }
 }
+
+/*=============================================
+=            find 2nd Largest number            =
+=============================================*/
+
+function findLargest() {
+  const num1 = parseFloat(document.getElementById("numInput1st").value);
+  const num2 = parseFloat(document.getElementById("numInput2nd").value);
+  const num3 = parseFloat(document.getElementById("numInput3rd").value);
+  const num4 = parseFloat(document.getElementById("numInput4th").value);
+
+  const numbers = [num1, num2, num3, num4];
+  const secondLargest = findSecondLargest(numbers);
+
+  // Display result in HTML
+  document.getElementById("secondLargest").innerText =
+    "Second largest number is: " + secondLargest;
+}
+
+function findSecondLargest(arr) {
+  if (arr.length < 2) {
+    return "Array must have at least two elements.";
+  }
+
+  let largest = -Infinity;
+  let secondLargest = -Infinity;
+
+  for (let num of arr) {
+    if (num > largest) {
+      secondLargest = largest;
+      largest = num;
+    } else if (num > secondLargest && num < largest) {
+      secondLargest = num;
+    }
+  }
+
+  if (secondLargest === -Infinity) {
+    return "No second largest value (all elements may be the same).";
+  }
+
+  return secondLargest;
+}
+
+// Example usage
+//const numbers = [10, 20, 5, 30, 30];
+
+/*=====  End of find 2nd Largest number  ======*/
